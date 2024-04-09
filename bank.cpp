@@ -67,6 +67,8 @@ double withdraw(double balance) {
 
     if(amount > balance) {
         std::cout<<"Not enough money to withdraw\n";
+    } else if(amount < 0) {
+        std::cout<<"Not a valid amount\n";
     } else {
         return amount;
     }
